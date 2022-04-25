@@ -1,0 +1,60 @@
+.menu{
+    background: var(--white);
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 20;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0;
+    animation: menu-open 1s 0s forwards;
+    .container{
+        width: 83%;
+        ul{
+            display: flex;
+            width: 1000px;
+            li{
+                list-style: none;
+                margin-right: 40px;
+                transition: 0.3s;
+                a{
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    font-weight: 600;
+                    color: #000;
+                    transition: 0.3s;
+                    img{
+                        width: 25px;
+                        margin-right: 7px;
+                        transition: 0.3s;
+                    }
+                    &:hover{
+                        color: var(--purple);
+                        letter-spacing: 1px;
+                        img{
+                            filter: invert(17%) sepia(96%) saturate(5190%) hue-rotate(264deg) brightness(72%) contrast(138%);
+                        }
+                    }
+                }
+                &:hover{
+                    a{
+                        img{
+                            transform: rotate(360deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @keyframes menu-open {
+        0%{
+            width: 0;
+            opacity: 0;
+        }
+        100%{
+            width: 100%;
+            opacity: 1;
+        }
+    }
+}
