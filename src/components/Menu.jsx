@@ -5,10 +5,10 @@ const Menu = () =>{
         <nav className="menu">
             <div className="container">
                 <ul>
-                    <li><a href="#"><img src="images/icons/home.svg" alt="" /> Գլխավոր</a></li>
-                    <li><a href="#"><img src="images/icons/information.png" alt="" /> Մեր Մասին</a></li>
-                    <li><a href="#"><img src="images/icons/layout.png" alt="" /> Կոնտենտ</a></li>
-                    <li><a href="#"><img src="images/icons/phone-call.png" alt="" /> Կոնտակտ</a></li>
+                    <li className="li"><a href="#"><img src="images/icons/home.svg" alt="" /> <span>Գլխավոր</span></a></li>
+                    <li className="li"><a href="#"><img src="images/icons/information.png" alt="" /> <span>Մեր Մասին</span></a></li>
+                    <li className="li"><a href="#"><img src="images/icons/layout.png" alt="" /> <span>Կոնտենտ</span></a></li>
+                    <li className="li"><a href="#"><img src="images/icons/phone-call.png" alt="" /> <span>Կոնտակտ</span></a></li>
                 </ul>
             </div>
         </nav>
